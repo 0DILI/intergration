@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="maligun.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container mx-auto">
+    <div class="text-white py-16">
+      <div class="table-header">
+        <h1 class="font-semibold text-2xl">
+          <img
+            src="assets/interation icon (1).svg"
+            class="inline w-10"
+            alt=""
+          />
+          Maligun API
+        </h1>
+      </div>
+
+      <div class="mt-14 flex text-white">
+        <form action="">
+          <div class="relative flex items-center text-white">
+            <img
+              src="assets/Search.svg"
+              class="w-5 h-5 absolute ml-3 pointer-events-none"
+              alt=""
+            />
+
+            <input
+              type="text"
+              name="search"
+              placeholder="search"
+              aria-label="search"
+              class="pl-10 py-2 placeholder-gray-500 rounded-xl bg-colorss bg-transparent text-white"
+            />
+          </div>
+        </form>
+
+        <button class="gradient px-7 py-2 rounded-lg ml-auto">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-4 h-4 inline"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <a href="#" class="text-base font-normal">New maligun API</a>
+        </button>
+      </div>
+
+      <!-- table -->
+      <table class="w-full mt-10 border">
+        <thead class="background">
+          <tr>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">#</th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              NAME
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              EMAIL
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              DOMAIN NAME
+            </th>
+
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              API KEY
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              STATUS
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              ACTIONS
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-5 text-sm">1</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+          <tr class="background">
+            <td class="p-5 text-sm">2</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive2"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive2"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td class="p-5 text-sm">3</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive3"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive3"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr class="background">
+            <td class="p-5 text-sm">4</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive4"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive4"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-5 text-sm">5</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive5"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive5"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr class="background">
+            <td class="p-5 text-sm">6</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">Web design</td>
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive6"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive6"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- table below -->
+      <div class="mt-14 flex gap-3.5">
+        <p>showing</p>
+        <p class="background px-3 rounded-full">
+          <a href="#">10</a>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span>
+        </p>
+        <p>entries</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 ml-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+          />
+        </svg>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg">1</a>
+        </p>
+        <p><a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg">2</a></p>
+        <p><a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg">3</a></p>
+        <p><a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg">4</a></p>
+        <p><a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg">5</a></p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
