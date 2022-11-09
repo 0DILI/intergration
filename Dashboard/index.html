@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body class="container mx-auto">
+    <div class="text-white gradient-4 px-10 pb-10">
+      <div class="mt-14 sm:flex text-white">
+        <div>
+          <h1 class="font-semibold text-2xl mt-7">
+            <img src="assets/integration 1.svg" class="inline w-10" alt="" />
+            Intergrations and connected apps
+          </h1>
+          <p class="text-sm mt-10">
+            supercharge your workflow and connect the tools you use everyday
+          </p>
+        </div>
+
+        <form action="" class="ml-auto mt-7">
+          <div class="relative flex items-center text-white">
+            <img
+              src="assets/Search.svg"
+              class="w-5 h-5 absolute ml-3 pointer-events-none"
+              alt=""
+            />
+
+            <input
+              type="text"
+              name="search"
+              placeholder="search"
+              aria-label="search"
+              class="pl-10 py-2 placeholder-gray-500 placeholder-text-sm rounded-xl bg-colorss bg-transparent text-white"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="mt-20">
+        <h1 class="font-medium text-2xl">
+          <img src="assets/Ellipse 111.svg" class="inline w-3.5 h-3.5" alt="" />
+          Email APIs
+        </h1>
+        <p class="text-base mt-3 font-normal">
+          Integrate Email apis to broadcast sms and send sms notification.
+        </p>
+      </div>
+
+      <!--  -->
+
+      <div class="main-cards grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/smtp 1 (1).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              SMTP
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate SMTP to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card2 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Sendgrid
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive2"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive2"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Sendgrid to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (1).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Maligun
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive3"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive3"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Mailgun to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card4 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (2).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Mandrill
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive4"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive4"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Maligun to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- second grid -->
+
+      <div class="main-cards grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (8).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Gmail API
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive5"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive5"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Gmail to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/Layer_x0020_1.svg"
+                class="inline w-12 h-12 pr-1"
+                alt=""
+              />
+              AWS API
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive6"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive6"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate AWS to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-20">
+        <h1 class="font-medium text-2xl">
+          <img src="assets/Ellipse 111.svg" class="inline w-3.5 h-3.5" alt="" />
+          SMS APIs
+        </h1>
+        <p class="text-base mt-3 font-normal">
+          Integrate sms apis to broadcast sms and send sms notification.
+        </p>
+      </div>
+
+      <!--  -->
+
+      <div class="main-cards grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (4).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Twilo
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive7"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive7"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Twilo to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card2 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (6).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Plivio
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive8"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive8"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Plivo to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (5).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Neximo
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive9"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive9"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Neximo to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card4 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (7).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Clickatell
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive10"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive10"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Clickatell to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div class="main-cards grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/interation icon (7).svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Clickatell platform
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive11"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive11"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Clickatell platform to broadcast email and send email
+            notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card2 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/planet.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Planet
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive12"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive12"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Planet to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/msg91.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              MS9G1
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive14"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive14"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Ms9g1 to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card4 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/africastalking.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Africastalking
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive15"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive15"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Africastalking to broadcast email and send email
+            notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="main-cards grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-5">
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/semysms.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Semysms
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive16"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive16"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Semysms to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card2 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/routesms.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Routesms
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive17"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive17"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Routesms to broadcast email and send email notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- card3 -->
+        <div
+          class="card flex flex-col justify-around p-6 rounded card-bg rounded-3xl"
+        >
+          <div class="card-inner flex items-center justify-between">
+            <h5>
+              <img
+                src="assets/custom.svg"
+                class="inline w-10 h-10 pr-1"
+                alt=""
+              />
+              Http Get/Post
+            </h5>
+            <span>
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive18"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive18"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div></div
+            ></span>
+          </div>
+
+          <p class="text-xs font-normal pt-5">
+            Integrate Http Get/Post to broadcast email and send email
+            notification.
+          </p>
+          <a href="#" class="text-sm font-medium text-blue-600 pt-10 text-right"
+            >View integration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
