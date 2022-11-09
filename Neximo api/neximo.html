@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="neximo.css" />
+  </head>
+  <body class="container mx-auto">
+    <div class="text-white py-16">
+      <div class="table-header">
+        <h1 class="font-semibold text-2xl">
+          <img
+            src="assets/interation icon (5).svg"
+            class="inline w-10"
+            alt=""
+          />
+          Neximo API
+        </h1>
+      </div>
+
+      <div class="mt-14 sm:flex text-white">
+        <form action="">
+          <div class="relative flex items-center text-white">
+            <img
+              src="assets/Search.svg"
+              class="w-5 h-5 absolute ml-3 pointer-events-none"
+              alt=""
+            />
+
+            <input
+              type="text"
+              name="search"
+              placeholder="search"
+              aria-label="search"
+              class="pl-10 py-2 placeholder-gray-500 placeholder-text-sm rounded-xl bg-colorss bg-transparent text-white"
+            />
+          </div>
+        </form>
+
+        <button class="gradient px-7 py-2 rounded-lg ml-auto">
+          <img src="assets/arrow.svg" class="inline pr-2" alt="" />
+          <a href="#" class="text-sm font-normal">Add new API</a>
+        </button>
+      </div>
+
+      <!-- table -->
+      <table class="w-full mt-10 border">
+        <thead class="background">
+          <tr>
+            <th class="w-72 p-5 text-sm font-semibold tracking-wide text-left">
+              #
+            </th>
+            <th class="w-80 p-5 text-sm font-semibold tracking-wide text-left">
+              GATEWAY
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              SENDER/SENDER ID/MASK/FORM
+            </th>
+
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              STATUS
+            </th>
+            <th class="p-5 text-sm font-semibold tracking-wide text-left">
+              ACTIONS
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-5 text-sm">1</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+          <tr class="background">
+            <td class="p-5 text-sm">2</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive2"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive2"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td class="p-5 text-sm">3</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive3"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive3"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr class="background">
+            <td class="p-5 text-sm">4</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive4"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive4"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="p-5 text-sm">5</td>
+            <td class="p-5 text-sm">SMS</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive5"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive5"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+
+          <tr class="background">
+            <td class="p-5 text-sm">6</td>
+            <td class="p-5 text-sm">Email</td>
+            <td class="p-5 text-sm pl-20">Web design</td>
+
+            <td class="p-5 text-sm">
+              <div id="app">
+                <div>
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="isActive6"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="isActive6"
+                      id="slider"
+                      class="relative mr-4 w-8 h-4 rounded-full bg-blue-600 cursor-pointer"
+                    ></label>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="p-5 text-sm">
+              <img src="assets/more-vertical-alt.svg" alt="" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- table below -->
+      <div class="mt-14 flex gap-3.5">
+        <p class="text-zinc-500 text-sm">showing</p>
+        <p class="background px-3 sm:rounded-full rounded-lg">
+          <a href="#" class="text-sm">10</a>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-4 h-6 inline"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </span>
+        </p>
+        <p class="text-zinc-500">entries</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 ml-auto"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+          />
+        </svg>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg text-sm"
+            >1</a
+          >
+        </p>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg text-sm"
+            >2</a
+          >
+        </p>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg text-sm"
+            >3</a
+          >
+        </p>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg text-sm"
+            >4</a
+          >
+        </p>
+        <p>
+          <a href="#" class="focus:bg-blue-600 px-4 py-2 rounded-lg text-sm"
+            >5</a
+          >
+        </p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
